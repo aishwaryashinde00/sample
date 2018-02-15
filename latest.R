@@ -2,7 +2,7 @@
 housedata <- read.csv("AttD02C.csv")
 data = housedata
 
-## 75% of the sample size
+## 75% of the sample sizea
 smp_size <- floor(0.8 * nrow(housedata))
 print(smp_size)
 
