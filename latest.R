@@ -1,5 +1,5 @@
 
-housedata <- read.csv("~/AttD02C.tmp.csv")
+housedata <- read.csv("~/AttD02C.csv")
 data = housedata
 
 ## 75% of the sample size
