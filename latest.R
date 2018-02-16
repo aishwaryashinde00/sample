@@ -10,12 +10,12 @@ train_ind <- sample(seq_len(nrow(housedata)), size = smp_size)
 
 train <- housedata[train_ind, ]
 test <- housedata[-train_ind, ]
-print(train)
+#print(train)
 relation <- lm((train$price) ~ (train$sqft_living)  + (train$bedrooms)  + train$sqft_lot15 + train$zipcode+ train$yr_built + train$lat + train$yr_renovated  + train$lat +  train$floors + train$waterfront + train$view + train$condition + train$grade + train$long ,train)
 cor(train$price,train$sqft_lot15)
 plot(housedata$price,housedata$sqft_living)
-print(relation)
-print(summary(relation))
+#print(relation)
+#print(summary(relation))
 res_id = residuals(relation)
 as.data.frame(res_id)
 
