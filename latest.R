@@ -20,7 +20,7 @@ res_id = residuals(relation)
 as.data.frame(res_id)
 
 result <- predict(relation,newdata = test)
-print(result)
+##print(result)
 ## rmse <- sqrt( sum( (test$price-result)^2 , na.rm = TRUE ) / nrow(df) )
 RMSE <- sqrt(mean(((test$price)-result)^2))
 print(RMSE)
